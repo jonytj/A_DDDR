@@ -1,0 +1,2720 @@
+
+ Execution of interactive request startet on johnny-ASUS-TUF at Sat Feb  7 03:23:48 CST 2026
+
+ Executing /home/johnny/deMon/6.3.1/object.mpi/deMon.6.3.1.mpi
+
+ ******************************************************************************
+ ******************************************************************************
+ ***                                                                        ***
+ ***                              PROGRAM deMon2k                           ***
+ ***                                                                        ***
+ ***                        (VERSION 6.3.1, May. 2025)                      ***
+ ***                                                                        ***
+ ***     COPYRIGHT (C) BY THE INTERNATIONAL DEMON DEVELOPERS COMMUNITY      ***
+ ***                                                                        ***
+ ***  AUTHORS: A.M. Koster, G. Geudtner, A. Alvarez-Ibarra, M.C. Amirani,   ***
+ ***           P. Calaminici, A.A.M. Carranza, M.E. Casida, J. Carmona-     ***
+ ***           Espindola, J. Cuny, F.A. Delesma, R. Delgado-Venegas, V.D.   ***
+ ***           Dominguez, R. Flores-Moreno, G.U. Gamboa, A. Goursot, T.     ***
+ ***           Heine, K. Hermann, L.I. Hernandez Segura, A. Ipatov, F.      ***
+ ***           Janetzko, A. de la Lande, F. Louisnard, J. Martin del Campo, ***
+ ***           N. Pedroza Montero, L.G.M. Pettersson, D. Mejia-Rodriguez,   ***
+ ***           J. Reveles, J. Vasquez-Perez, A. Vela, B. Zuniga-Gutierrez   ***
+ ***           and D.R. Salahub                                             ***
+ ***                                                                        ***
+ ******************************************************************************
+ ******************************************************************************
+                                                                                
+
+ FIRST TIMING           DATE: SAT FEB 07 03:23:49 2026  TOTAL TIME:       0.105
+                                                                                
+
+ INITIALIZATION                   STEP TIME:     0.045  TOTAL TIME:       0.150
+
+ ******************************************************************************
+
+ Lactato de etilo
+
+ ******************************************************************************
+
+
+ *** MOLECULAR SIMULATION DATA ***
+
+ MOLECULAR CHARGE: 0
+ NUMBER OF ATOMS: 18
+ MOLECULAR SIMULATION TYPE: QM ONLY
+
+ *** MOLECULAR QM DATA ***
+
+ MULTIPLICITY: 1
+ NUMBER OF QM ATOMS: 18
+ NUMBER OF ELECTRONS: 64
+
+ *** SCF OPTIONS ***
+
+ SCF THEORY: RESTRICTED KOHN-SHAM (RKS)
+ DIAGONALIZER: RS
+ START GUESS: HUECKEL DENSITY
+ SCF TOLERANCE: 0.100E-04
+ SCF/SCP TOLERANCE WILL BE TIGHTEN
+ POTENTIAL DENSITY: AUXILIARY DENSITY
+ NUMBER OF SCF ITERATIONS: 100
+ DIIS ACCELERATION: ON
+ XC-POTENTIAL: PBE96 - PBE
+ GRID TECHNIQUE: ADAPTIVE
+ GRID PRUNING: ON
+ GRID METHOD: DIRECT
+ GRID GENERATING FUNCTION: SCF
+ GRID TOLERANCE: 0.100E-04
+ ATOMIC WEIGHT FUNCTION: BECKE SCREENED
+ RADIAL QUADRATURE TYPE: GAUSS-CHEBYSHEV
+ SCF METHOD: DIRECT & DOUBLE ASYMPTOTIC EXPANSION
+ FREEZE AUXILIARY FUNCTIONS: OFF
+ NUMERICAL FIT SOLVER: SVD
+ SVD THRESHOLD: 0.100E-05
+ SCF SCREENING: 0.156E-11
+ SYMMETRY USE: NONE
+ ROTATION OF THE ANGULAR GRIDS: ON
+ SCF PRINTING UNTIL CYCLE 0
+ SPHERICAL ORBITALS WILL BE USED
+
+ *** MPI RUNTIME PARAMETER ***
+
+ MPI: ACTIVE
+ VERSION: 3.1
+ NUMBER OF CORES: 10
+ NUMBER OF PHYSICAL NODES:   1
+ CORE-NODE DISTRIBUTION: johnny-ASUS-TUF(10)
+
+ *** GEOMETRY OPTIMIZATION OPTIONS ***
+
+ NUMBER OF OPTIMIZATION STEPS: 50
+ MAXIMUM OPTIMIZATION STEP: 0.300
+ OPTMIZATION TOLERANCE: 0.300E-03
+ COORDINATE SYSTEM: INTERNAL REDUNDANT
+ HESSIAN UPDATE: BFGS
+ STEP TYPE: LEVENBERG-MARQUARDT
+ THE FISCHER START HESSIAN IS USED
+ NO WEIGHT DERIVATIVES WILL BE USED
+
+ *** ACTIVATED INTERFACE PORTS ***
+
+ FILE deMon.mol WILL BE WRITTEN
+
+
+ *** GEOMETRY ***
+
+
+ ORIGINAL INPUT ORIENTATION IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS
+
+    1  C1       -8.107825       0.824147       0.000000       6    12.011
+    2  C2       -7.038673      -0.304415      -0.000019       6    12.011
+    3  H3       -8.947548       0.519925       0.589249       1     1.008
+    4  H4       -7.685443       1.715593       0.414508       1     1.008
+    5  H5       -8.426367       1.013697      -1.003744       1     1.008
+    6  C6       -5.731923       0.512309      -0.000041       6    12.011
+    7  O7       -5.627967       1.923012      -0.000016       8    15.999
+    8  O8       -7.230120      -0.260582       1.163238       8    15.999
+    9  O9       -4.692453      -0.334114      -0.000032       8    15.999
+   10  C10      -3.430241       0.319264      -0.000019       6    12.011
+   11  H11      -6.627453      -0.885718      -0.721542       1     1.008
+   12  H12      -7.919571      -0.447528       1.466017       1     1.008
+   13  C13      -2.316530      -0.720204      -0.000054       6    12.011
+   14  H14      -3.346100       0.931297      -0.873653       1     1.008
+   15  H15      -3.346279       0.929880       0.874623       1     1.008
+   16  H16      -2.399307      -1.331590      -0.874271       1     1.008
+   17  H17      -1.367460      -0.226074       0.001054       1     1.008
+   18  H18      -2.400597      -1.333030       0.873031       1     1.008
+
+
+
+ GENERATED Z-MATRIX IN ANGSTROM
+
+  NO.  ATOM     NB    RAB     NC    THABC    ND    PHABCD  NCODE Z-ATOM   MASS
+
+    1  O8                                                           8    15.999
+    2  C2        1    1.1797                                        6    12.011
+    3  H12       1    0.7759    2  121.3360                  RAD    1     1.008
+    4  H11       2    1.0137    1  142.0892    3  -99.8481   RAD    1     1.008
+    5  C6        2    1.5410    1   96.7730    3  165.1719   RAD    6    12.011
+    6  O9        5    1.3405    2  108.8391    1   96.7958   RAD    8    15.999
+    7  C10       6    1.4213    5  113.4765    2  180.0000   RAD    6    12.011
+    8  O7        5    1.4145    2  126.2201    1  -83.2017   RAD    8    15.999
+    9  H15       7    1.0700    6  109.3923    5   60.0641   RAD    1     1.008
+   10  H14       7    1.0700    6  109.4374    5  -59.9775   RAD    1     1.008
+   11  C13       7    1.5234    6  109.6067    5  180.0000   RAD    6    12.011
+   12  H17      11    1.0700    7  109.4712    6 -179.9376   RAD    1     1.008
+   13  H16      11    1.0700    7  109.4712    6   60.0623   RAD    1     1.008
+   14  H18      11    1.0700    7  109.4712    6  -59.9376   RAD    1     1.008
+   15  C1        2    1.5546    1   82.0336    3   64.5011   RAD    6    12.011
+   16  H4       15    1.0700    2  109.4712    1   71.0847   RAD    1     1.008
+   17  H3       15    1.0700    2  109.4712    1  -48.9153   RAD    1     1.008
+   18  H5       15    1.0700    2  109.4712    1 -168.9153   RAD    1     1.008
+
+ *** 6 TETRAHEDRAL ANGLE(S) SUBSTITUTED ***
+
+
+ GENERATED Z-MATRIX ORIENTATION IN ANGSTROM
+
+  NO.  ATOM        X            Y            Z      Z-ATOM   MASS   TYPE OPTXYZ
+
+    1  O8        0.000000     0.000000     0.000000     8    15.999  QM       
+    2  C2        0.000000     0.000000     1.179720     6    12.011  QM       
+    3  H12       0.662692     0.000000    -0.403493     1     1.008  QM       
+    4  H11      -0.106532    -0.613681     1.979506     1     1.008  QM       
+    5  C6       -1.479271     0.391616     1.361458     6    12.011  QM       
+    6  O9       -2.200082    -0.720728     1.561585     8    15.999  QM       
+    7  C10      -3.587642    -0.471426     1.742161     6    12.011  QM       
+    8  O7       -2.007031     1.703521     1.325888     8    15.999  QM       
+    9  H15      -3.978277     0.011088     0.870677     1     1.008  QM       
+   10  H14      -3.727999     0.159977     2.594529     1     1.008  QM       
+   11  C13      -4.319532    -1.789406     1.961506     6    12.011  QM       
+   12  H17      -5.363878    -1.599335     2.096094     1     1.008  QM       
+   13  H16      -3.929845    -2.273067     2.832779     1     1.008  QM       
+   14  H18      -4.178922    -2.421515     1.109703     1     1.008  QM       
+   15  C1        0.662781     1.389618     0.964266     6    12.011  QM       
+   16  H4       -0.066041     2.078360     0.590965     1     1.008  QM       
+   17  H3        1.461598     1.298168     0.258272     1     1.008  QM       
+   18  H5        1.048967     1.748782     1.895266     1     1.008  QM       
+
+
+
+
+ *** ERI STATISTIC ***
+
+ Est. Integrated ERIs: 12956160
+ Est. Asymptotic ERIS: 0
+                                                                                
+
+ INPUT                            STEP TIME:     0.090  TOTAL TIME:       0.240
+
+ *** THE GENERATED Z-MATRIX ORIENTATION IS USED ***
+
+ POINT GROUP: C1
+
+ GROUP ORDER: 1
+
+
+ STANDARD ORIENTATION IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        1.677787      -0.951830      -0.651691       8    15.999  QM
+    2  C2        1.389716      -0.681306       0.459872       6    12.011  QM
+    3  H12       2.353772      -1.292516      -0.821824       1     1.008  QM
+    4  H11       0.840455      -1.009365       1.246193       1     1.008  QM
+    5  C6        0.222971       0.266157       0.119794       6    12.011  QM
+    6  O9       -0.927325      -0.417397       0.200441       8    15.999  QM
+    7  C10      -2.074429       0.367597      -0.096239       6    12.011  QM
+    8  O7        0.330019       1.634294      -0.223182       8    15.999  QM
+    9  H15      -1.996697       0.747545      -1.093484       1     1.008  QM
+   10  H14      -2.136195       1.182890       0.593966       1     1.008  QM
+   11  C13      -3.326573      -0.492152       0.021290       6    12.011  QM
+   12  H17      -4.188582       0.100556      -0.203515       1     1.008  QM
+   13  H16      -3.405569      -0.872824       1.018160       1     1.008  QM
+   14  H18      -3.265026      -1.308044      -0.668226       1     1.008  QM
+   15  C1        2.611173       0.269577       0.316339       6    12.011  QM
+   16  H4        2.360321       1.075688      -0.341047       1     1.008  QM
+   17  H3        3.440728      -0.273614      -0.085760       1     1.008  QM
+   18  H5        2.873183       0.661135       1.277033       1     1.008  QM
+                                                                                
+
+ SYMMETRY ANALYSIS                STEP TIME:     0.000  TOTAL TIME:       0.241
+
+ NUMBER OF TB ORBITALS: 50
+                                                                                
+
+ START GUESS                      STEP TIME:     0.647  TOTAL TIME:       0.889
+
+
+ GENERAL BASIS SET: (DZV/DZVP)
+ O8 BASIS SET: READ IN
+ C2 BASIS SET: READ IN
+ H12 BASIS SET: READ IN
+ H11 BASIS SET: READ IN
+ C6 BASIS SET: READ IN
+ O9 BASIS SET: READ IN
+ C10 BASIS SET: READ IN
+ O7 BASIS SET: READ IN
+ H15 BASIS SET: READ IN
+ H14 BASIS SET: READ IN
+ C13 BASIS SET: READ IN
+ H17 BASIS SET: READ IN
+ H16 BASIS SET: READ IN
+ H18 BASIS SET: READ IN
+ C1 BASIS SET: READ IN
+ H4 BASIS SET: READ IN
+ H3 BASIS SET: READ IN
+ H5 BASIS SET: READ IN
+
+ NUMBER OF SHELLS: 78
+ NUMBER OF ORBITALS: 170
+ NUMBER OF PRIMITIVE GAUSSIAN EXPONENTS: 180
+
+
+ GENERAL AUXIS SET: (GEN-A2*)
+
+ NUMBER OF AUXILIARY FUNCTION SETS: 96
+ NUMBER OF AUXILIARY FUNCTION SHELLS: 232
+ NUMBER OF AUXILIARY FUNCTION: 964
+
+
+
+ *** WARNING IN INVCDERI ***
+
+ *** SVD THRESHOLD CHANGED TO: 0.866E-06 ***
+
+
+
+ *** WARNING IN INVCDERI ***
+
+ *** 27 COULOMB EIGENVALUES ARE QUENCHED ***
+                                                                                
+
+ MPI AUXILIARY FUNCTION FIT       STEP TIME:     0.420  TOTAL TIME:       1.318  
+                                                                                
+
+ CORE INTEGRALS                   STEP TIME:     0.438  TOTAL TIME:       1.327
+                                                                                
+
+ NULLSPACE                        STEP TIME:     0.015  TOTAL TIME:       1.351
+                                                                                
+
+ ADAPTIVE GRID GENERATION         STEP TIME:     0.092  TOTAL TIME:       1.496
+
+ CYCLE:    1    EUPPER =     -773.855973665814    CDMIX =        0.300000000000
+ CYCLE:    1    ELOWER =    -1370.928390284141    SHIFT =        0.000000000000
+ CYCLE:    1    EXC    =      -55.171899739530    ERCDC =       28.356603187434
+ CYCLE:    1    ETOTAL =     -829.027873405343    ERROR =      597.072416618328
+
+ CYCLE:    2    EUPPER =     -765.917119173303    CDMIX =        0.300000000000
+ CYCLE:    2    ELOWER =     -775.972624861564    SHIFT =        0.000000000000
+ CYCLE:    2    EXC    =      -55.646099883358    ERCDC =        2.852692861338
+ CYCLE:    2    ETOTAL =     -821.563219056662    ERROR =       10.055505688261
+
+ CYCLE:    3    EUPPER =     -772.459510505728    CDMIX =        0.300000000000
+ CYCLE:    3    ELOWER =     -774.586521670094    SHIFT =        0.000000000000
+ CYCLE:    3    EXC    =      -55.935706807940    ERCDC =        1.496342159707
+ CYCLE:    3    ETOTAL =     -828.395217313668    ERROR =        2.127011164366
+
+ CYCLE:    4    EUPPER =     -774.049720161919    CDMIX =        0.300000000000
+ CYCLE:    4    ELOWER =     -774.213088602998    SHIFT =        0.000000000000
+ CYCLE:    4    EXC    =      -56.072770672303    ERCDC =        0.351399534209
+ CYCLE:    4    ETOTAL =     -830.122490834222    ERROR =        0.163368441079
+
+ CYCLE:    5    EUPPER =     -774.243706616640    CDMIX =        0.300000000000
+ CYCLE:    5    ELOWER =     -774.276017942913    SHIFT =        0.000000000000
+ CYCLE:    5    EXC    =      -56.134821328217    ERCDC =        0.097686108064
+ CYCLE:    5    ETOTAL =     -830.378527944858    ERROR =        0.032311326273
+
+ CYCLE:    6    EUPPER =     -774.289333772489    CDMIX =        0.300000000000
+ CYCLE:    6    ELOWER =     -774.302365169049    SHIFT =        0.000000000000
+ CYCLE:    6    EXC    =      -56.167419351187    ERCDC =        0.060785502665
+ CYCLE:    6    ETOTAL =     -830.456753123676    ERROR =        0.013031396560
+
+ CYCLE:    7    EUPPER =     -774.291316659844    CDMIX =        0.300000000000
+ CYCLE:    7    ELOWER =     -774.296604414104    SHIFT =        0.000000000000
+ CYCLE:    7    EXC    =      -56.190787213731    ERCDC =        0.033824076216
+ CYCLE:    7    ETOTAL =     -830.482103873575    ERROR =        0.005287754261
+
+ CYCLE:    8    EUPPER =     -774.301773541765    CDMIX =        0.300000000000
+ CYCLE:    8    ELOWER =     -774.304040724026    SHIFT =        0.000000000000
+ CYCLE:    8    EXC    =      -56.204444835301    ERCDC =        0.024539301961
+ CYCLE:    8    ETOTAL =     -830.506218377066    ERROR =        0.002267182262
+
+ CYCLE:    9    EUPPER =     -774.302092960334    CDMIX =        0.300000000000
+ CYCLE:    9    ELOWER =     -774.303055384058    SHIFT =        0.000000000000
+ CYCLE:    9    EXC    =      -56.236933375041    EDIIS =        0.012714858414
+ CYCLE:    9    ETOTAL =     -830.539026335374    ERROR =        0.000962423725
+
+ CYCLE:   10    EUPPER =     -774.317113151272    CDMIX =        0.200000000000
+ CYCLE:   10    ELOWER =     -774.319894993023    SHIFT =        0.000000000000
+ CYCLE:   10    EXC    =      -56.231115756646    EDIIS =        0.053970358671
+ CYCLE:   10    ETOTAL =     -830.548228907919    ERROR =        0.002781841751
+
+ CYCLE:   11    EUPPER =     -774.307022148642    CDMIX =        0.200000000000
+ CYCLE:   11    ELOWER =     -774.307024235594    SHIFT =        0.000000000000
+ CYCLE:   11    EXC    =      -56.231722433316    EDIIS =        0.000914536586
+ CYCLE:   11    ETOTAL =     -830.538744581958    ERROR =        0.000002086952
+
+ CYCLE:   12    EUPPER =     -774.307929896827    CDMIX =        0.200000000000
+ CYCLE:   12    ELOWER =     -774.307930129082    SHIFT =        0.000000000000
+ CYCLE:   12    EXC    =      -56.231499795017    EDIIS =        0.000458324578
+ CYCLE:   12    ETOTAL =     -830.539429691845    ERROR =        0.000000232254
+
+ CYCLE:   13    EUPPER =     -774.307458022518    CDMIX =        0.100000000000
+ CYCLE:   13    ELOWER =     -774.307458111202    SHIFT =        0.000000000000
+ CYCLE:   13    EXC    =      -56.231747230256    ERCDC =        0.000266287664
+ CYCLE:   13    ETOTAL =     -830.539205252774    ERROR =        0.000000088684
+
+ *** SCF CONVERGED ***
+
+
+ RANDOMIZED SCF GRID GENERATED IN 3 CYCLES
+
+
+ ELECTRONIC CORE ENERGY      =      -1385.035664235
+ ELECTRONIC COULOMB ENERGY   =        610.728193386
+ ELECTRONIC HARTREE ENERGY   =       -774.307470849
+
+ EXCHANGE ENERGY             =        -54.082435998
+ CORRELATION ENERGY          =         -2.149166209
+ EXCHANGE-CORRELATION ENERGY =        -56.231602207
+
+ ELECTRONIC SCF ENERGY       =       -830.539073056
+ NUCLEAR-REPULSION ENERGY    =        409.041795326
+ TOTAL ENERGY                =       -421.497277731
+                                                                                
+
+ SCF ITERATION                    STEP TIME:     2.833  TOTAL TIME:       4.858
+
+
+
+ ***************************************
+ *** MOLECULAR GEOMETRY OPTIMIZATION ***
+ ***************************************
+
+ NUMBER OF REDUNDANT VARIABLES: 86
+ NUMBER OF PRIMITIVE COORDINATES: 86
+
+ *** ACTIVE DEGREES OF FREEDOM: 48 ***
+
+ *** ENTERING OPTIMIZATION CYCLE: 1 ***
+
+
+ RMSQ FORCE :   0.0809592  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.2473706  MAXIMUM :   0.0004500  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 4 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 1 IN ANGSTROM
+
+ R1              1.207108
+ R2              0.811854
+ R3              1.021123
+ R4              1.545584
+ R5              1.340415
+ R6              1.423805
+ R7              1.401117
+ R8              1.071933
+ R9              1.071960
+ R10             1.523849
+ R11             1.071874
+ R12             1.071999
+ R13             1.071980
+ R14             1.551161
+ R15             1.071255
+ R16             1.071962
+ R17             1.073163
+ A1            121.256860
+ A2            141.845371
+ A3             96.963922
+ A4            108.924724
+ A5            113.645817
+ A6            126.381178
+ A7            109.394368
+ A8            109.432920
+ A9            109.530859
+ A10           109.457157
+ A11           109.514740
+ A12           109.512877
+ A13            82.339659
+ A14           109.482914
+ A15           109.759891
+ A16           109.283087
+ D1            -99.769772
+ D2            165.072533
+ D3             96.589589
+ D4            180.038129
+ D5            -83.380638
+ D6             60.041873
+ D7            -59.947860
+ D8            180.004761
+ D9           -179.939959
+ D10            60.065917
+ D11           -59.945483
+ D12            64.170146
+ D13            71.331776
+ D14           -48.833165
+ D15          -168.843020
+
+
+ COORDINATES OF OPTIMIZATION STEP 1 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.207108       6    12.011  QM
+    3  H12       0.694013       0.000000      -0.421251       1     1.008  QM
+    4  H11      -0.107046      -0.621687       2.010064       1     1.008  QM
+    5  C6       -1.482407       0.395199       1.394501       6    12.011  QM
+    6  O9       -2.206785      -0.715262       1.591643       8    15.999  QM
+    7  C10      -3.596296      -0.465410       1.776179       6    12.011  QM
+    8  O7       -2.006111       1.694453       1.366194       8    15.999  QM
+    9  H15      -3.988917       0.022199       0.906048       1     1.008  QM
+   10  H14      -3.734797       0.164103       2.632700       1     1.008  QM
+   11  C13      -4.327042      -1.785183       1.991409       6    12.011  QM
+   12  H17      -5.373028      -1.595821       2.129144       1     1.008  QM
+   13  H16      -3.935116      -2.273786       2.861377       1     1.008  QM
+   14  H18      -4.187989      -2.415214       1.135333       1     1.008  QM
+   15  C1        0.669810       1.383728       1.000338       6    12.011  QM
+   16  H4       -0.055874       2.080537       0.632334       1     1.008  QM
+   17  H3        1.471310       1.296446       0.293881       1     1.008  QM
+   18  H5        1.056985       1.733712       1.938041       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 10 CYCLES
+
+
+ TOTAL ENERGY    =       -421.547407307
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     3.902  TOTAL TIME:       8.763
+
+ *** ENTERING OPTIMIZATION CYCLE: 2 ***
+
+
+ RMSQ FORCE :   0.0645479  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.1985040  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0144338  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0440315  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 5 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 2 IN ANGSTROM
+
+ R1              1.234901
+ R2              0.838344
+ R3              1.030428
+ R4              1.551034
+ R5              1.340419
+ R6              1.427155
+ R7              1.381383
+ R8              1.074573
+ R9              1.074605
+ R10             1.524345
+ R11             1.074438
+ R12             1.074641
+ R13             1.074623
+ R14             1.546853
+ R15             1.073000
+ R16             1.074501
+ R17             1.077330
+ A1            121.095239
+ A2            141.429591
+ A3             97.109208
+ A4            109.024190
+ A5            113.893357
+ A6            126.583086
+ A7            109.387775
+ A8            109.416788
+ A9            109.445141
+ A10           109.436392
+ A11           109.580414
+ A12           109.574366
+ A13            82.913740
+ A14           109.470317
+ A15           110.033641
+ A16           109.191088
+ D1            -99.659163
+ D2            165.014692
+ D3             96.223994
+ D4            180.092279
+ D5            -83.701829
+ D6             59.994436
+ D7            -59.906074
+ D8            180.000000
+ D9           -179.942204
+ D10            60.072160
+ D11           -59.957284
+ D12            63.773556
+ D13            71.587608
+ D14           -48.739754
+ D15          -168.764210
+
+
+ COORDINATES OF OPTIMIZATION STEP 2 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.234901       6    12.011  QM
+    3  H12       0.717882       0.000000      -0.432973       1     1.008  QM
+    4  H11      -0.107794      -0.633339       2.040533       1     1.008  QM
+    5  C6       -1.486768       0.397970       1.426858       6    12.011  QM
+    6  O9       -2.214904      -0.711213       1.617262       8    15.999  QM
+    7  C10      -3.607864      -0.463254       1.804210       6    12.011  QM
+    8  O7       -2.005403       1.678157       1.407998       8    15.999  QM
+    9  H15      -4.001803       0.031722       0.935580       1     1.008  QM
+   10  H14      -3.746719       0.162584       2.666661       1     1.008  QM
+   11  C13      -4.335659      -1.786639       2.010589       6    12.011  QM
+   12  H17      -5.384475      -1.599877       2.150309       1     1.008  QM
+   13  H16      -3.942174      -2.282435       2.879042       1     1.008  QM
+   14  H18      -4.195876      -2.412671       1.148406       1     1.008  QM
+   15  C1        0.678364       1.377012       1.044076       6    12.011  QM
+   16  H4       -0.043249       2.084211       0.682865       1     1.008  QM
+   17  H3        1.484227       1.295666       0.338016       1     1.008  QM
+   18  H5        1.065915       1.715096       1.990724       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 9 CYCLES
+
+
+ TOTAL ENERGY    =       -421.587803564
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     3.179  TOTAL TIME:      11.942
+
+ *** ENTERING OPTIMIZATION CYCLE: 3 ***
+
+
+ RMSQ FORCE :   0.0530684  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.1590303  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0144338  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0438072  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 5 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 3 IN ANGSTROM
+
+ R1              1.280676
+ R2              0.879681
+ R3              1.049415
+ R4              1.562320
+ R5              1.341599
+ R6              1.434421
+ R7              1.332822
+ R8              1.080438
+ R9              1.080510
+ R10             1.525304
+ R11             1.080123
+ R12             1.080572
+ R13             1.080506
+ R14             1.537582
+ R15             1.077078
+ R16             1.079938
+ R17             1.086515
+ A1            120.587122
+ A2            140.202845
+ A3             97.351462
+ A4            109.180286
+ A5            114.442582
+ A6            127.003529
+ A7            109.373746
+ A8            109.383060
+ A9            109.182573
+ A10           109.392973
+ A11           109.744270
+ A12           109.730477
+ A13            84.687799
+ A14           109.348175
+ A15           110.418928
+ A16           109.372821
+ D1            -99.285718
+ D2            164.899218
+ D3             95.199721
+ D4            180.151624
+ D5            -84.707438
+ D6             59.889231
+ D7            -59.788973
+ D8            180.012575
+ D9           -179.952242
+ D10            60.084530
+ D11           -59.988169
+ D12            62.867786
+ D13            72.106272
+ D14           -48.456688
+ D15          -168.541868
+
+
+ COORDINATES OF OPTIMIZATION STEP 3 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.280676       6    12.011  QM
+    3  H12       0.757279       0.000000      -0.447624       1     1.008  QM
+    4  H11      -0.108384      -0.662899       2.086958       1     1.008  QM
+    5  C6       -1.495973       0.403666       1.480584       6    12.011  QM
+    6  O9       -2.232589      -0.704613       1.650876       8    15.999  QM
+    7  C10      -3.633468      -0.462636       1.842055       6    12.011  QM
+    8  O7       -2.000103       1.637457       1.485853       8    15.999  QM
+    9  H15      -4.029456       0.051838       0.978426       1     1.008  QM
+   10  H14      -3.774776       0.151716       2.719612       1     1.008  QM
+   11  C13      -4.352265      -1.795763       2.022758       6    12.011  QM
+   12  H17      -5.407878      -1.617505       2.166190       1     1.008  QM
+   13  H16      -3.955587      -2.310268       2.886219       1     1.008  QM
+   14  H18      -4.208797      -2.409443       1.145087       1     1.008  QM
+   15  C1        0.698196       1.362504       1.138323       6    12.011  QM
+   16  H4       -0.013617       2.094025       0.794382       1     1.008  QM
+   17  H3        1.515083       1.295617       0.435125       1     1.008  QM
+   18  H5        1.085479       1.671790       2.105209       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 10 CYCLES
+
+
+ TOTAL ENERGY    =       -421.649087264
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.142  TOTAL TIME:      16.085
+
+ *** ENTERING OPTIMIZATION CYCLE: 4 ***
+
+
+ RMSQ FORCE :   0.0375328  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.1037311  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0288675  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0771638  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 5 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 4 IN ANGSTROM
+
+ R1              1.332818
+ R2              0.919274
+ R3              1.073700
+ R4              1.577454
+ R5              1.346760
+ R6              1.443352
+ R7              1.260428
+ R8              1.088747
+ R9              1.088939
+ R10             1.525822
+ R11             1.088212
+ R12             1.088825
+ R13             1.088734
+ R14             1.523020
+ R15             1.083400
+ R16             1.087518
+ R17             1.098189
+ A1            119.320012
+ A2            137.579969
+ A3             97.405415
+ A4            109.180955
+ A5            115.107783
+ A6            127.529234
+ A7            109.314064
+ A8            109.310761
+ A9            108.735515
+ A10           109.320194
+ A11           110.043924
+ A12           109.999909
+ A13            88.503817
+ A14           109.016506
+ A15           110.627090
+ A16           110.294868
+ D1            -98.301177
+ D2            164.882060
+ D3             93.033013
+ D4            180.360718
+ D5            -86.761571
+ D6             59.665936
+ D7            -59.581825
+ D8            179.993005
+ D9           -179.948964
+ D10            60.128662
+ D11           -60.035419
+ D12            61.277586
+ D13            72.845528
+ D14           -47.852836
+ D15          -168.081588
+
+
+ COORDINATES OF OPTIMIZATION STEP 4 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.332818       6    12.011  QM
+    3  H12       0.801513       0.000000      -0.450157       1     1.008  QM
+    4  H11      -0.104568      -0.716687       2.125445       1     1.008  QM
+    5  C6       -1.510158       0.407979       1.536135       6    12.011  QM
+    6  O9       -2.256668      -0.706096       1.659908       8    15.999  QM
+    7  C10      -3.670008      -0.478898       1.844615       6    12.011  QM
+    8  O7       -1.991959       1.571895       1.579102       8    15.999  QM
+    9  H15      -4.060919       0.071451       0.990405       1     1.008  QM
+   10  H14      -3.825102       0.110154       2.747251       1     1.008  QM
+   11  C13      -4.371428      -1.828388       1.967164       6    12.011  QM
+   12  H17      -5.438781      -1.668084       2.105969       1     1.008  QM
+   13  H16      -3.977797      -2.377385       2.821094       1     1.008  QM
+   14  H18      -4.211677      -2.414491       1.063668       1     1.008  QM
+   15  C1        0.731663       1.335169       1.293052       6    12.011  QM
+   16  H4        0.039177       2.108060       0.981829       1     1.008  QM
+   17  H3        1.568914       1.292746       0.600299       1     1.008  QM
+   18  H5        1.113842       1.589948       2.290571       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 11 CYCLES
+
+
+ TOTAL ENERGY    =       -421.708832782
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.302  TOTAL TIME:      20.387
+
+ *** ENTERING OPTIMIZATION CYCLE: 5 ***
+
+
+ RMSQ FORCE :   0.0224281  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0551826  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433015  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1044051  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 5 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 5 IN ANGSTROM
+
+ R1              1.372030
+ R2              0.949869
+ R3              1.091931
+ R4              1.590180
+ R5              1.357516
+ R6              1.449536
+ R7              1.229710
+ R8              1.095579
+ R9              1.095881
+ R10             1.525157
+ R11             1.094769
+ R12             1.095283
+ R13             1.095140
+ R14             1.508853
+ R15             1.089553
+ R16             1.093671
+ R17             1.105849
+ A1            117.487665
+ A2            134.042499
+ A3             97.469394
+ A4            108.695196
+ A5            115.564966
+ A6            127.818874
+ A7            109.235511
+ A8            109.223827
+ A9            108.234618
+ A10           109.287777
+ A11           110.371754
+ A12           110.287230
+ A13            93.338588
+ A14           108.546926
+ A15           110.537167
+ A16           111.728835
+ D1            -96.538722
+ D2            164.827081
+ D3             90.279853
+ D4            180.630210
+ D5            -89.437861
+ D6             59.402948
+ D7            -59.341439
+ D8            179.970894
+ D9           -179.944509
+ D10            60.179143
+ D11           -60.089560
+ D12            59.243113
+ D13            73.791537
+ D14           -46.764512
+ D15          -167.244978
+
+ *** SCFTOL TIGHTEN TO 0.500E-05 ***
+
+
+ COORDINATES OF OPTIMIZATION STEP 5 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.372030       6    12.011  QM
+    3  H12       0.842639       0.000000      -0.438419       1     1.008  QM
+    4  H11      -0.089381      -0.779801       2.131132       1     1.008  QM
+    5  C6       -1.521724       0.412671       1.578748       6    12.011  QM
+    6  O9       -2.273889      -0.715671       1.641541       8    15.999  QM
+    7  C10      -3.698095      -0.509188       1.815193       6    12.011  QM
+    8  O7       -1.990239       1.546177       1.667318       8    15.999  QM
+    9  H15      -4.081592       0.083888       0.977645       1     1.008  QM
+   10  H14      -3.871777       0.043688       2.745310       1     1.008  QM
+   11  C13      -4.375959      -1.874592       1.862896       6    12.011  QM
+   12  H17      -5.454437      -1.738558       1.992900       1     1.008  QM
+   13  H16      -3.987209      -2.464230       2.700061       1     1.008  QM
+   14  H18      -4.194577      -2.421322       0.931490       1     1.008  QM
+   15  C1        0.770312       1.294424       1.459900       6    12.011  QM
+   16  H4        0.103440       2.113427       1.192238       1     1.008  QM
+   17  H3        1.628282       1.277107       0.781885       1     1.008  QM
+   18  H5        1.144387       1.479515       2.483966       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 10 CYCLES
+
+
+ TOTAL ENERGY    =       -421.744863684
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.211  TOTAL TIME:      24.597
+
+ *** ENTERING OPTIMIZATION CYCLE: 6 ***
+
+
+ RMSQ FORCE :   0.0137491  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0379231  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433019  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1149719  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 4 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 6 IN ANGSTROM
+
+ R1              1.400334
+ R2              0.968269
+ R3              1.102793
+ R4              1.595590
+ R5              1.361476
+ R6              1.453831
+ R7              1.228438
+ R8              1.099793
+ R9              1.100139
+ R10             1.523661
+ R11             1.098793
+ R12             1.099006
+ R13             1.098817
+ R14             1.500865
+ R15             1.094535
+ R16             1.097975
+ R17             1.108134
+ A1            115.323923
+ A2            129.937407
+ A3             97.822410
+ A4            108.322334
+ A5            115.656833
+ A6            127.863006
+ A7            109.108173
+ A8            109.096660
+ A9            107.859267
+ A10           109.320172
+ A11           110.660438
+ A12           110.542796
+ A13            98.321234
+ A14           108.076376
+ A15           110.340050
+ A16           113.219343
+ D1            -94.038400
+ D2            164.679024
+ D3             87.351262
+ D4            180.973020
+ D5            -92.301613
+ D6             59.128369
+ D7            -59.067420
+ D8            179.966399
+ D9           -179.940523
+ D10            60.233171
+ D11           -60.141528
+ D12            56.843836
+ D13            75.045394
+ D14           -45.134832
+ D15          -165.930917
+
+ *** SCFTOL TIGHTEN TO 0.100E-06 ***
+
+ *** CDFTOL TIGHTEN TO 0.100E-03 ***
+
+
+ COORDINATES OF OPTIMIZATION STEP 6 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.400334       6    12.011  QM
+    3  H12       0.875222       0.000000      -0.414163       1     1.008  QM
+    4  H11      -0.059549      -0.843463       2.108273       1     1.008  QM
+    5  C6       -1.524564       0.417674       1.617499       6    12.011  QM
+    6  O9       -2.282485      -0.713332       1.616578       8    15.999  QM
+    7  C10      -3.712838      -0.512696       1.782282       6    12.011  QM
+    8  O7       -1.983827       1.548248       1.758704       8    15.999  QM
+    9  H15      -4.083327       0.127196       0.968143       1     1.008  QM
+   10  H14      -3.895890       0.001451       2.737505       1     1.008  QM
+   11  C13      -4.382941      -1.880803       1.754212       6    12.011  QM
+   12  H17      -5.467815      -1.756809       1.876771       1     1.008  QM
+   13  H16      -4.004509      -2.514713       2.568314       1     1.008  QM
+   14  H18      -4.189163      -2.385512       0.797594       1     1.008  QM
+   15  C1        0.812215       1.243270       1.617543       6    12.011  QM
+   16  H4        0.175661       2.106937       1.401012       1     1.008  QM
+   17  H3        1.687115       1.248326       0.954162       1     1.008  QM
+   18  H5        1.177705       1.350091       2.658200       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 11 CYCLES
+
+
+ TOTAL ENERGY    =       -421.768205691
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.350  TOTAL TIME:      28.947
+
+ *** ENTERING OPTIMIZATION CYCLE: 7 ***
+
+
+ RMSQ FORCE :   0.0093283  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0290484  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433022  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1314168  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 4 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 7 IN ANGSTROM
+
+ R1              1.416545
+ R2              0.978705
+ R3              1.106830
+ R4              1.590912
+ R5              1.359333
+ R6              1.457518
+ R7              1.219112
+ R8              1.101371
+ R9              1.101725
+ R10             1.521743
+ R11             1.100494
+ R12             1.100379
+ R13             1.100165
+ R14             1.502422
+ R15             1.097934
+ R16             1.100528
+ R17             1.106158
+ A1            112.963990
+ A2            125.370826
+ A3             98.711656
+ A4            108.531151
+ A5            115.512778
+ A6            127.417637
+ A7            108.911624
+ A8            108.907990
+ A9            107.668960
+ A10           109.404651
+ A11           110.896270
+ A12           110.756756
+ A13           102.933647
+ A14           107.725010
+ A15           110.160092
+ A16           114.422848
+ D1            -90.902101
+ D2            164.416772
+ D3             84.351502
+ D4            181.477765
+ D5            -95.235479
+ D6             58.839712
+ D7            -58.774134
+ D8            179.966479
+ D9           -179.935006
+ D10            60.294089
+ D11           -60.191380
+ D12            54.121522
+ D13            76.676777
+ D14           -42.949144
+ D15          -164.067854
+
+
+ COORDINATES OF OPTIMIZATION STEP 7 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.416545       6    12.011  QM
+    3  H12       0.901143       0.000000      -0.381844       1     1.008  QM
+    4  H11      -0.014209      -0.902422       2.057251       1     1.008  QM
+    5  C6       -1.514752       0.422448       1.657508       6    12.011  QM
+    6  O9       -2.289155      -0.693119       1.597550       8    15.999  QM
+    7  C10      -3.720187      -0.473728       1.765991       6    12.011  QM
+    8  O7       -1.948134       1.544323       1.857037       8    15.999  QM
+    9  H15      -4.070105       0.216809       0.982578       1     1.008  QM
+   10  H14      -3.895710       0.002385       2.743901       1     1.008  QM
+   11  C13      -4.409616      -1.826771       1.667695       6    12.011  QM
+   12  H17      -5.495155      -1.693757       1.790167       1     1.008  QM
+   13  H16      -4.048835      -2.509001       2.452064       1     1.008  QM
+   14  H18      -4.220255      -2.290615       0.688229       1     1.008  QM
+   15  C1        0.858183       1.186471       1.752821       6    12.011  QM
+   16  H4        0.256152       2.090569       1.592749       1     1.008  QM
+   17  H3        1.744372       1.210602       1.100711       1     1.008  QM
+   18  H5        1.216397       1.209981       2.799107       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 11 CYCLES
+
+
+ TOTAL ENERGY    =       -421.784409900
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.454  TOTAL TIME:      33.402
+
+ *** ENTERING OPTIMIZATION CYCLE: 8 ***
+
+
+ RMSQ FORCE :   0.0066795  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0220139  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433025  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1415634  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 4 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 8 IN ANGSTROM
+
+ R1              1.429482
+ R2              0.979898
+ R3              1.108853
+ R4              1.580511
+ R5              1.360282
+ R6              1.460225
+ R7              1.228538
+ R8              1.102016
+ R9              1.102376
+ R10             1.520075
+ R11             1.101311
+ R12             1.101035
+ R13             1.100793
+ R14             1.508761
+ R15             1.099849
+ R16             1.102238
+ R17             1.103994
+ A1            110.662783
+ A2            120.473319
+ A3            100.092967
+ A4            108.854708
+ A5            115.434962
+ A6            126.860579
+ A7            108.711303
+ A8            108.723852
+ A9            107.544253
+ A10           109.494003
+ A11           111.059143
+ A12           110.914095
+ A13           107.005376
+ A14           107.582172
+ A15           110.102442
+ A16           115.099370
+ D1            -87.404701
+ D2            164.257262
+ D3             81.522833
+ D4            181.970754
+ D5            -97.967382
+ D6             58.622989
+ D7            -58.509261
+ D8            179.994522
+ D9           -179.930570
+ D10            60.357435
+ D11           -60.237835
+ D12            51.123068
+ D13            78.678751
+ D14           -40.407365
+ D15          -161.720798
+
+
+ COORDINATES OF OPTIMIZATION STEP 8 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.429482       6    12.011  QM
+    3  H12       0.916865       0.000000      -0.345774       1     1.008  QM
+    4  H11       0.043274      -0.954702       1.991823       1     1.008  QM
+    5  C6       -1.497684       0.422186       1.706460       6    12.011  QM
+    6  O9       -2.291706      -0.676833       1.596669       8    15.999  QM
+    7  C10      -3.720484      -0.439341       1.782270       6    12.011  QM
+    8  O7       -1.908927       1.549512       1.969747       8    15.999  QM
+    9  H15      -4.056397       0.297539       1.034867       1     1.008  QM
+   10  H14      -3.879713      -0.002691       2.781879       1     1.008  QM
+   11  C13      -4.431222      -1.773576       1.623226       6    12.011  QM
+   12  H17      -5.515099      -1.630769       1.756276       1     1.008  QM
+   13  H16      -4.081275      -2.500094       2.372883       1     1.008  QM
+   14  H18      -4.255112      -2.195715       0.621962       1     1.008  QM
+   15  C1        0.905569       1.123209       1.870736       6    12.011  QM
+   16  H4        0.342414       2.062673       1.771077       1     1.008  QM
+   17  H3        1.799973       1.163560       1.227819       1     1.008  QM
+   18  H5        1.256503       1.058893       2.915491       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 10 CYCLES
+
+
+ TOTAL ENERGY    =       -421.795538784
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.278  TOTAL TIME:      37.679
+
+ *** ENTERING OPTIMIZATION CYCLE: 9 ***
+
+
+ RMSQ FORCE :   0.0047170  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0145968  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433026  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1476803  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 3 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 9 IN ANGSTROM
+
+ R1              1.436157
+ R2              0.979526
+ R3              1.107690
+ R4              1.561692
+ R5              1.356184
+ R6              1.461910
+ R7              1.214460
+ R8              1.101624
+ R9              1.101954
+ R10             1.518498
+ R11             1.101154
+ R12             1.100699
+ R13             1.100451
+ R14             1.518469
+ R15             1.100731
+ R16             1.102821
+ R17             1.100903
+ A1            108.381923
+ A2            115.240013
+ A3            101.891566
+ A4            109.457649
+ A5            115.312955
+ A6            126.111263
+ A7            108.493653
+ A8            108.534589
+ A9            107.490050
+ A10           109.582400
+ A11           111.163416
+ A12           111.027322
+ A13           110.385098
+ A14           107.819312
+ A15           110.120471
+ A16           115.075394
+ D1            -83.625781
+ D2            164.373345
+ D3             78.855115
+ D4            182.537366
+ D5           -100.643832
+ D6             58.464955
+ D7            -58.255632
+ D8            180.051032
+ D9           -179.922890
+ D10            60.428150
+ D11           -60.277552
+ D12            47.965982
+ D13            80.842529
+ D14           -37.759977
+ D15          -159.067384
+
+
+ COORDINATES OF OPTIMIZATION STEP 9 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.436157       6    12.011  QM
+    3  H12       0.929546       0.000000      -0.308893       1     1.008  QM
+    4  H11       0.111237      -0.995744       1.908489       1     1.008  QM
+    5  C6       -1.471691       0.411642       1.757960       6    12.011  QM
+    6  O9       -2.284416      -0.663802       1.609187       8    15.999  QM
+    7  C10      -3.707349      -0.406438       1.824144       6    12.011  QM
+    8  O7       -1.850491       1.518854       2.082776       8    15.999  QM
+    9  H15      -4.032617       0.371875       1.115622       1     1.008  QM
+   10  H14      -3.841328      -0.008347       2.842906       1     1.008  QM
+   11  C13      -4.444779      -1.717439       1.616025       6    12.011  QM
+   12  H17      -5.524149      -1.562037       1.768834       1     1.008  QM
+   13  H16      -4.102072      -2.483543       2.328187       1     1.008  QM
+   14  H18      -4.290908      -2.099336       0.595501       1     1.008  QM
+   15  C1        0.953049       1.057205       1.965083       6    12.011  QM
+   16  H4        0.434937       2.027591       1.926083       1     1.008  QM
+   17  H3        1.853070       1.108557       1.329835       1     1.008  QM
+   18  H5        1.293276       0.902560       3.000610       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 11 CYCLES
+
+
+ TOTAL ENERGY    =       -421.802209160
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.464  TOTAL TIME:      42.143
+
+ *** ENTERING OPTIMIZATION CYCLE: 10 ***
+
+
+ RMSQ FORCE :   0.0033616  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0079208  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433028  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1484724  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 5 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 10 IN ANGSTROM
+
+ R1              1.444992
+ R2              0.974508
+ R3              1.108047
+ R4              1.546395
+ R5              1.358754
+ R6              1.462864
+ R7              1.232230
+ R8              1.101851
+ R9              1.102136
+ R10             1.517821
+ R11             1.101395
+ R12             1.100856
+ R13             1.100646
+ R14             1.530618
+ R15             1.100930
+ R16             1.103325
+ R17             1.100428
+ A1            106.677749
+ A2            110.292864
+ A3            103.797952
+ A4            109.961377
+ A5            115.272064
+ A6            125.555348
+ A7            108.332758
+ A8            108.436667
+ A9            107.431205
+ A10           109.632425
+ A11           111.193231
+ A12           111.074601
+ A13           112.643712
+ A14           108.691053
+ A15           110.145946
+ A16           114.109962
+ D1            -79.816993
+ D2            165.049520
+ D3             76.339912
+ D4            183.806580
+ D5           -102.322224
+ D6             58.225555
+ D7            -58.303478
+ D8            179.878856
+ D9           -179.882161
+ D10            60.524462
+ D11           -60.280158
+ D12            45.044155
+ D13            82.029421
+ D14           -36.540708
+ D15          -157.347332
+
+ *** SCFTOL TIGHTEN TO 0.750E-07 ***
+
+ *** CDFTOL TIGHTEN TO 0.750E-04 ***
+
+
+ COORDINATES OF OPTIMIZATION STEP 10 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.444992       6    12.011  QM
+    3  H12       0.933514       0.000000      -0.279673       1     1.008  QM
+    4  H11       0.183736      -1.022902       1.829284       1     1.008  QM
+    5  C6       -1.450935       0.387433       1.813805       6    12.011  QM
+    6  O9       -2.275817      -0.676785       1.631532       8    15.999  QM
+    7  C10      -3.695839      -0.413318       1.864114       6    12.011  QM
+    8  O7       -1.821266       1.500027       2.192463       8    15.999  QM
+    9  H15      -4.013600       0.395908       1.187168       1     1.008  QM
+   10  H14      -3.818401      -0.051075       2.897779       1     1.008  QM
+   11  C13      -4.446084      -1.708042       1.609943       6    12.011  QM
+   12  H17      -5.523691      -1.549500       1.773337       1     1.008  QM
+   13  H16      -4.108561      -2.503968       2.291459       1     1.008  QM
+   14  H18      -4.301288      -2.052690       0.574726       1     1.008  QM
+   15  C1        0.998112       0.999652       2.034279       6    12.011  QM
+   16  H4        0.536659       1.999202       2.036649       1     1.008  QM
+   17  H3        1.908717       1.038812       1.412514       1     1.008  QM
+   18  H5        1.312840       0.767355       3.062834       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 12 CYCLES
+
+
+ TOTAL ENERGY    =       -421.804926105
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.430  TOTAL TIME:      46.573
+
+ *** ENTERING OPTIMIZATION CYCLE: 11 ***
+
+
+ RMSQ FORCE :   0.0019306  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0044632  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433027  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1636005  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 11 IN ANGSTROM
+
+ R1              1.444879
+ R2              0.974369
+ R3              1.107015
+ R4              1.540434
+ R5              1.356383
+ R6              1.462082
+ R7              1.225177
+ R8              1.101486
+ R9              1.101717
+ R10             1.517799
+ R11             1.101019
+ R12             1.100460
+ R13             1.100248
+ R14             1.532426
+ R15             1.100344
+ R16             1.102847
+ R17             1.100011
+ A1            106.463292
+ A2            109.224587
+ A3            104.384544
+ A4            110.194307
+ A5            115.212727
+ A6            125.378557
+ A7            108.289080
+ A8            108.456521
+ A9            107.408942
+ A10           109.622582
+ A11           111.171144
+ A12           111.053059
+ A13           112.879299
+ A14           109.777761
+ A15           109.885431
+ A16           112.827279
+ D1            -78.894814
+ D2            165.534639
+ D3             77.379660
+ D4            183.309736
+ D5           -103.171258
+ D6             57.980763
+ D7            -58.588738
+ D8            179.585323
+ D9           -179.808126
+ D10            60.612044
+ D11           -60.222408
+ D12            44.557197
+ D13            80.121921
+ D14           -38.954914
+ D15          -159.159571
+
+ *** SCFTOL TIGHTEN TO 0.250E-07 ***
+
+ *** CDFTOL TIGHTEN TO 0.250E-04 ***
+
+
+ COORDINATES OF OPTIMIZATION STEP 11 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.444879       6    12.011  QM
+    3  H12       0.934421       0.000000      -0.276137       1     1.008  QM
+    4  H11       0.201333      -1.025710       1.809388       1     1.008  QM
+    5  C6       -1.444839       0.372729       1.827567       6    12.011  QM
+    6  O9       -2.261225      -0.699581       1.674471       8    15.999  QM
+    7  C10      -3.677259      -0.446712       1.936369       6    12.011  QM
+    8  O7       -1.812446       1.472068       2.224275       8    15.999  QM
+    9  H15      -4.015659       0.355576       1.261765       1     1.008  QM
+   10  H14      -3.780729      -0.080158       2.970155       1     1.008  QM
+   11  C13      -4.421533      -1.749076       1.704816       6    12.011  QM
+   12  H17      -5.496478      -1.598489       1.889368       1     1.008  QM
+   13  H16      -4.063423      -2.537621       2.383760       1     1.008  QM
+   14  H18      -4.295074      -2.097805       0.668987       1     1.008  QM
+   15  C1        1.006024       0.990593       2.040673       6    12.011  QM
+   16  H4        0.583949       2.006591       2.021773       1     1.008  QM
+   17  H3        1.933187       0.988474       1.443483       1     1.008  QM
+   18  H5        1.276760       0.750972       3.079570       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 12 CYCLES
+
+
+ TOTAL ENERGY    =       -421.805548013
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     3.912  TOTAL TIME:      50.485
+
+ *** ENTERING OPTIMIZATION CYCLE: 12 ***
+
+
+ RMSQ FORCE :   0.0008005  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0017725  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0287969  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0820303  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 6 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 12 IN ANGSTROM
+
+ R1              1.444217
+ R2              0.973964
+ R3              1.106223
+ R4              1.535734
+ R5              1.356096
+ R6              1.461420
+ R7              1.219402
+ R8              1.101175
+ R9              1.101374
+ R10             1.518233
+ R11             1.100719
+ R12             1.100124
+ R13             1.099890
+ R14             1.530666
+ R15             1.099280
+ R16             1.102365
+ R17             1.100154
+ A1            106.478188
+ A2            108.796228
+ A3            105.086448
+ A4            110.392554
+ A5            115.215662
+ A6            125.140541
+ A7            108.289221
+ A8            108.491535
+ A9            107.429435
+ A10           109.601385
+ A11           111.122550
+ A12           111.007094
+ A13           112.821179
+ A14           111.297433
+ A15           109.426903
+ A16           110.932198
+ D1            -78.300415
+ D2            166.223144
+ D3             75.882356
+ D4            185.366350
+ D5           -100.794808
+ D6             57.733418
+ D7            -58.935238
+ D8            179.277364
+ D9           -179.748954
+ D10            60.682911
+ D11           -60.170196
+ D12            44.622999
+ D13            76.502426
+ D14           -43.570907
+ D15          -162.760043
+
+
+ COORDINATES OF OPTIMIZATION STEP 12 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.444217       6    12.011  QM
+    3  H12       0.933961       0.000000      -0.276265       1     1.008  QM
+    4  H11       0.212357      -1.025471       1.800645       1     1.008  QM
+    5  C6       -1.440145       0.353117       1.843932       6    12.011  QM
+    6  O9       -2.255199      -0.716266       1.667566       8    15.999  QM
+    7  C10      -3.675385      -0.461699       1.899979       6    12.011  QM
+    8  O7       -1.817853       1.454255       2.206934       8    15.999  QM
+    9  H15      -3.996224       0.347711       1.225810       1     1.008  QM
+   10  H14      -3.801809      -0.106369       2.934765       1     1.008  QM
+   11  C13      -4.418806      -1.759290       1.638031       6    12.011  QM
+   12  H17      -5.496878      -1.606178       1.798965       1     1.008  QM
+   13  H16      -4.079092      -2.554958       2.317575       1     1.008  QM
+   14  H18      -4.269005      -2.097338       0.602154       1     1.008  QM
+   15  C1        1.004161       0.991033       2.037895       6    12.011  QM
+   16  H4        0.632513       2.023508       1.972413       1     1.008  QM
+   17  H3        1.955954       0.923632       1.485849       1     1.008  QM
+   18  H5        1.205014       0.761383       3.094899       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 14 CYCLES
+
+
+ TOTAL ENERGY    =       -421.805952388
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.645  TOTAL TIME:      55.130
+
+ *** ENTERING OPTIMIZATION CYCLE: 13 ***
+
+
+ RMSQ FORCE :   0.0016322  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0048279  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433019  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1151611  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 8 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 13 IN ANGSTROM
+
+ R1              1.443695
+ R2              0.974532
+ R3              1.107022
+ R4              1.535495
+ R5              1.358193
+ R6              1.461136
+ R7              1.222351
+ R8              1.101313
+ R9              1.101483
+ R10             1.518867
+ R11             1.100837
+ R12             1.100229
+ R13             1.099973
+ R14             1.526161
+ R15             1.098365
+ R16             1.102389
+ R17             1.101223
+ A1            106.666778
+ A2            109.172780
+ A3            105.315536
+ A4            110.497461
+ A5            115.266424
+ A6            125.073482
+ A7            108.311851
+ A8            108.550166
+ A9            107.471057
+ A10           109.574716
+ A11           111.082471
+ A12           110.956636
+ A13           112.640339
+ A14           112.480491
+ A15           108.952332
+ A16           109.394179
+ D1            -78.165947
+ D2            166.833264
+ D3             78.595281
+ D4            183.294511
+ D5           -101.910966
+ D6             57.499371
+ D7            -59.273583
+ D8            178.998795
+ D9           -179.693730
+ D10            60.735624
+ D11           -60.116390
+ D12            45.068352
+ D13            72.375812
+ D14           -48.772051
+ D15          -166.999108
+
+
+ COORDINATES OF OPTIMIZATION STEP 13 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.443695       6    12.011  QM
+    3  H12       0.933591       0.000000      -0.279501       1     1.008  QM
+    4  H11       0.214433      -1.023394       1.807261       1     1.008  QM
+    5  C6       -1.442031       0.337342       1.849273       6    12.011  QM
+    6  O9       -2.237442      -0.757335       1.732265       8    15.999  QM
+    7  C10      -3.652204      -0.534013       2.021218       6    12.011  QM
+    8  O7       -1.825601       1.432353       2.233939       8    15.999  QM
+    9  H15      -4.022751       0.254348       1.347369       1     1.008  QM
+   10  H14      -3.744668      -0.164203       3.054638       1     1.008  QM
+   11  C13      -4.373911      -1.854275       1.813839       6    12.011  QM
+   12  H17      -5.447771      -1.723594       2.017777       1     1.008  QM
+   13  H16      -3.985807      -2.628342       2.492588       1     1.008  QM
+   14  H18      -4.258890      -2.207102       0.778357       1     1.008  QM
+   15  C1        0.994809       0.997186       2.031184       6    12.011  QM
+   16  H4        0.667336       2.038483       1.909249       1     1.008  QM
+   17  H3        1.970149       0.864570       1.534810       1     1.008  QM
+   18  H5        1.123442       0.795256       3.106066       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 13 CYCLES
+
+
+ TOTAL ENERGY    =       -421.806392251
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.503  TOTAL TIME:      59.633
+
+ *** ENTERING OPTIMIZATION CYCLE: 14 ***
+
+
+ RMSQ FORCE :   0.0011199  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0031676  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433023  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1305707  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 14 IN ANGSTROM
+
+ R1              1.442199
+ R2              0.975393
+ R3              1.107711
+ R4              1.537274
+ R5              1.357884
+ R6              1.461029
+ R7              1.225536
+ R8              1.101436
+ R9              1.101672
+ R10             1.518861
+ R11             1.100924
+ R12             1.100376
+ R13             1.100139
+ R14             1.524549
+ R15             1.098196
+ R16             1.102759
+ R17             1.101696
+ A1            106.678419
+ A2            109.490649
+ A3            105.171249
+ A4            110.455424
+ A5            115.214962
+ A6            125.150513
+ A7            108.353161
+ A8            108.554021
+ A9            107.467742
+ A10           109.561737
+ A11           111.085815
+ A12           110.953741
+ A13           112.756546
+ A14           112.505662
+ A15           108.943161
+ A16           109.185250
+ D1            -78.080326
+ D2            167.058368
+ D3             78.489331
+ D4            183.167376
+ D5           -101.711691
+ D6             57.371682
+ D7            -59.419112
+ D8            178.886332
+ D9           -179.707393
+ D10            60.716932
+ D11           -60.127124
+ D12            45.251860
+ D13            70.226323
+ D14           -51.347352
+ D15          -169.313026
+
+
+ COORDINATES OF OPTIMIZATION STEP 14 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.442199       6    12.011  QM
+    3  H12       0.934359       0.000000      -0.279938       1     1.008  QM
+    4  H11       0.215676      -1.021719       1.811790       1     1.008  QM
+    5  C6       -1.446009       0.332286       1.844511       6    12.011  QM
+    6  O9       -2.236345      -0.765265       1.723671       8    15.999  QM
+    7  C10      -3.652071      -0.547578       2.011661       6    12.011  QM
+    8  O7       -1.838069       1.429142       2.225477       8    15.999  QM
+    9  H15      -4.024838       0.242795       1.341202       1     1.008  QM
+   10  H14      -3.747197      -0.183080       3.046926       1     1.008  QM
+   11  C13      -4.369348      -1.869166       1.797516       6    12.011  QM
+   12  H17      -5.443896      -1.742554       2.000862       1     1.008  QM
+   13  H16      -3.979498      -2.645214       2.473234       1     1.008  QM
+   14  H18      -4.251929      -2.217002       0.760440       1     1.008  QM
+   15  C1        0.989723       0.998463       2.031919       6    12.011  QM
+   16  H4        0.678023       2.040187       1.878009       1     1.008  QM
+   17  H3        1.978037       0.838452       1.569632       1     1.008  QM
+   18  H5        1.083365       0.818844       3.114834       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 13 CYCLES
+
+
+ TOTAL ENERGY    =       -421.806588263
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     3.709  TOTAL TIME:      63.343
+
+ *** ENTERING OPTIMIZATION CYCLE: 15 ***
+
+
+ RMSQ FORCE :   0.0008076  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0026552  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0203049  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0646786  MAXIMUM :   0.0018000  CONVERGED : NO
+
+ LAMBDA ITERATION CONVERGED IN 9 CYCLES
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 15 IN ANGSTROM
+
+ R1              1.439802
+ R2              0.975987
+ R3              1.108854
+ R4              1.540771
+ R5              1.358085
+ R6              1.461161
+ R7              1.228436
+ R8              1.101510
+ R9              1.101916
+ R10             1.518719
+ R11             1.101036
+ R12             1.100567
+ R13             1.100355
+ R14             1.522501
+ R15             1.098365
+ R16             1.103239
+ R17             1.102112
+ A1            106.647572
+ A2            110.174380
+ A3            104.992157
+ A4            110.352903
+ A5            115.166257
+ A6            125.235991
+ A7            108.445048
+ A8            108.524680
+ A9            107.456569
+ A10           109.548143
+ A11           111.119099
+ A12           110.972133
+ A13           113.063679
+ A14           111.908333
+ A15           109.258549
+ A16           109.443415
+ D1            -77.835013
+ D2            167.295687
+ D3             77.966026
+ D4            183.149587
+ D5           -101.585431
+ D6             57.110891
+ D7            -59.650787
+ D8            178.704768
+ D9           -179.776225
+ D10            60.633907
+ D11           -60.189685
+ D12            45.688635
+ D13            65.545371
+ D14           -56.639859
+ D15          -174.389613
+
+
+ COORDINATES OF OPTIMIZATION STEP 15 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.439802       6    12.011  QM
+    3  H12       0.935079       0.000000      -0.279605       1     1.008  QM
+    4  H11       0.219330      -1.017451       1.822222       1     1.008  QM
+    5  C6       -1.451888       0.327312       1.838379       6    12.011  QM
+    6  O9       -2.237846      -0.772071       1.704133       8    15.999  QM
+    7  C10      -3.655705      -0.560519       1.986822       6    12.011  QM
+    8  O7       -1.852729       1.425268       2.216367       8    15.999  QM
+    9  H15      -4.027728       0.237573       1.325027       1     1.008  QM
+   10  H14      -3.756788      -0.208842       3.026209       1     1.008  QM
+   11  C13      -4.368723      -1.881030       1.753660       6    12.011  QM
+   12  H17      -5.444545      -1.759165       1.953747       1     1.008  QM
+   13  H16      -3.980174      -2.664808       2.421469       1     1.008  QM
+   14  H18      -4.245893      -2.216536       0.712925       1     1.008  QM
+   15  C1        0.978544       1.002354       2.036248       6    12.011  QM
+   16  H4        0.693628       2.038419       1.808662       1     1.008  QM
+   17  H3        1.991608       0.794795       1.651857       1     1.008  QM
+   18  H5        1.003995       0.882979       3.131580       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 14 CYCLES
+
+
+ TOTAL ENERGY    =       -421.806904008
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.322  TOTAL TIME:      67.664
+
+ *** ENTERING OPTIMIZATION CYCLE: 16 ***
+
+
+ RMSQ FORCE :   0.0009017  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0023906  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0433012  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.1393325  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 16 IN ANGSTROM
+
+ R1              1.439238
+ R2              0.975591
+ R3              1.109057
+ R4              1.541613
+ R5              1.358130
+ R6              1.461464
+ R7              1.228069
+ R8              1.101534
+ R9              1.101985
+ R10             1.518613
+ R11             1.101091
+ R12             1.100584
+ R13             1.100396
+ R14             1.523296
+ R15             1.098732
+ R16             1.103130
+ R17             1.101925
+ A1            106.679595
+ A2            110.422007
+ A3            104.999852
+ A4            110.306611
+ A5            115.169470
+ A6            125.264697
+ A7            108.471587
+ A8            108.493579
+ A9            107.455705
+ A10           109.558268
+ A11           111.145633
+ A12           110.992884
+ A13           113.164418
+ A14           111.218236
+ A15           109.701053
+ A16           109.969028
+ D1            -77.484377
+ D2            167.387364
+ D3             77.538335
+ D4            183.309220
+ D5           -101.817250
+ D6             56.987907
+ D7            -59.721269
+ D8            178.635904
+ D9           -179.816289
+ D10            60.583098
+ D11           -60.226967
+ D12            45.975738
+ D13            62.070789
+ D14           -60.184456
+ D15          -178.132072
+
+
+ COORDINATES OF OPTIMIZATION STEP 16 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.439238       6    12.011  QM
+    3  H12       0.934542       0.000000      -0.280013       1     1.008  QM
+    4  H11       0.225233      -1.014652       1.826223       1     1.008  QM
+    5  C6       -1.453151       0.325154       1.838233       6    12.011  QM
+    6  O9       -2.238431      -0.773600       1.694735       8    15.999  QM
+    7  C10      -3.657728      -0.563866       1.973093       6    12.011  QM
+    8  O7       -1.855322       1.420871       2.220091       8    15.999  QM
+    9  H15      -4.027260       0.239357       1.316088       1     1.008  QM
+   10  H14      -3.762484      -0.219285       3.014564       1     1.008  QM
+   11  C13      -4.369736      -1.882649       1.728059       6    12.011  QM
+   12  H17      -5.446348      -1.762480       1.925208       1     1.008  QM
+   13  H16      -3.983629      -2.671522       2.391297       1     1.008  QM
+   14  H18      -4.243402      -2.211088       0.685447       1     1.008  QM
+   15  C1        0.973287       1.007015       2.038459       6    12.011  QM
+   16  H4        0.707812       2.034496       1.753824       1     1.008  QM
+   17  H3        1.999981       0.772694       1.709995       1     1.008  QM
+   18  H5        0.955025       0.939544       3.138165       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 12 CYCLES
+
+
+ TOTAL ENERGY    =       -421.807049731
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     3.638  TOTAL TIME:      71.302
+
+ *** ENTERING OPTIMIZATION CYCLE: 17 ***
+
+
+ RMSQ FORCE :   0.0007606  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0018499  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0321114  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0993891  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 17 IN ANGSTROM
+
+ R1              1.439749
+ R2              0.975177
+ R3              1.108701
+ R4              1.540591
+ R5              1.358238
+ R6              1.461646
+ R7              1.226209
+ R8              1.101527
+ R9              1.101943
+ R10             1.518485
+ R11             1.101092
+ R12             1.100541
+ R13             1.100354
+ R14             1.525327
+ R15             1.099150
+ R16             1.102801
+ R17             1.101498
+ A1            106.766205
+ A2            110.321992
+ A3            105.054159
+ A4            110.309788
+ A5            115.194815
+ A6            125.246495
+ A7            108.441204
+ A8            108.480009
+ A9            107.454088
+ A10           109.578269
+ A11           111.153597
+ A12           111.007096
+ A13           113.061841
+ A14           110.695370
+ A15           110.109214
+ A16           110.454563
+ D1            -77.229844
+ D2            167.382213
+ D3             77.236333
+ D4            183.328218
+ D5           -102.282088
+ D6             57.035876
+ D7            -59.635374
+ D8            178.693059
+ D9           -179.824746
+ D10            60.573637
+ D11           -60.234196
+ D12            46.146449
+ D13            60.431751
+ D14           -61.426992
+ D15          -179.870038
+
+
+ COORDINATES OF OPTIMIZATION STEP 17 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.439749       6    12.011  QM
+    3  H12       0.933722       0.000000      -0.281307       1     1.008  QM
+    4  H11       0.229814      -1.013974       1.824796       1     1.008  QM
+    5  C6       -1.451789       0.324987       1.839889       6    12.011  QM
+    6  O9       -2.238762      -0.771914       1.690575       8    15.999  QM
+    7  C10      -3.658153      -0.561967       1.969252       6    12.011  QM
+    8  O7       -1.850897       1.417040       2.229401       8    15.999  QM
+    9  H15      -4.026098       0.244430       1.315263       1     1.008  QM
+   10  H14      -3.762703      -0.221058       3.011907       1     1.008  QM
+   11  C13      -4.371189      -1.878985       1.718576       6    12.011  QM
+   12  H17      -5.447810      -1.759056       1.915829       1     1.008  QM
+   13  H16      -3.986064      -2.671013       2.378546       1     1.008  QM
+   14  H18      -4.244986      -2.203433       0.674745       1     1.008  QM
+   15  C1        0.972319       1.012030       2.037257       6    12.011  QM
+   16  H4        0.712727       2.032676       1.722579       1     1.008  QM
+   17  H3        2.004246       0.773419       1.730071       1     1.008  QM
+   18  H5        0.939293       0.974276       3.137612       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 11 CYCLES
+
+
+ TOTAL ENERGY    =       -421.807121517
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     3.458  TOTAL TIME:      74.760
+
+ *** ENTERING OPTIMIZATION CYCLE: 18 ***
+
+
+ RMSQ FORCE :   0.0003687  MAXIMUM :   0.0003000  CONVERGED : NO
+ MAX FORCE  :   0.0008788  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0149832  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0430136  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 18 IN ANGSTROM
+
+ R1              1.440994
+ R2              0.974969
+ R3              1.108199
+ R4              1.538809
+ R5              1.358171
+ R6              1.461392
+ R7              1.224804
+ R8              1.101506
+ R9              1.101860
+ R10             1.518379
+ R11             1.101051
+ R12             1.100477
+ R13             1.100273
+ R14             1.526181
+ R15             1.099435
+ R16             1.102555
+ R17             1.101140
+ A1            106.856481
+ A2            110.094683
+ A3            105.061083
+ A4            110.344548
+ A5            115.220957
+ A6            125.197931
+ A7            108.394128
+ A8            108.490927
+ A9            107.445025
+ A10           109.589690
+ A11           111.144756
+ A12           111.009080
+ A13           112.874434
+ A14           110.446569
+ A15           110.322874
+ A16           110.720793
+ D1            -77.082543
+ D2            167.427019
+ D3             76.720050
+ D4            183.529367
+ D5           -102.925866
+ D6             57.091607
+ D7            -59.575128
+ D8            178.715394
+ D9           -179.800023
+ D10            60.605840
+ D11           -60.211162
+ D12            46.297074
+ D13            59.641064
+ D14           -61.713364
+ D15          -180.648524
+
+ *** SCFTOL TIGHTEN TO 0.100E-07 ***
+
+ *** CDFTOL TIGHTEN TO 0.100E-04 ***
+
+
+ COORDINATES OF OPTIMIZATION STEP 18 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.440994       6    12.011  QM
+    3  H12       0.933079       0.000000      -0.282717       1     1.008  QM
+    4  H11       0.232654      -1.014400       1.821740       1     1.008  QM
+    5  C6       -1.450316       0.323466       1.840851       6    12.011  QM
+    6  O9       -2.239333      -0.770404       1.681075       8    15.999  QM
+    7  C10      -3.659294      -0.559299       1.954590       6    12.011  QM
+    8  O7       -1.846565       1.411316       2.240493       8    15.999  QM
+    9  H15      -4.021981       0.251444       1.303077       1     1.008  QM
+   10  H14      -3.767999      -0.223846       2.998502       1     1.008  QM
+   11  C13      -4.373574      -1.873336       1.692700       6    12.011  QM
+   12  H17      -5.450912      -1.752677       1.885306       1     1.008  QM
+   13  H16      -3.993233      -2.669786       2.350012       1     1.008  QM
+   14  H18      -4.242917      -2.191893       0.647688       1     1.008  QM
+   15  C1        0.971544       1.016559       2.034240       6    12.011  QM
+   16  H4        0.713251       2.032857       1.703815       1     1.008  QM
+   17  H3        2.005097       0.780250       1.731663       1     1.008  QM
+   18  H5        0.934544       0.994716       3.134542       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 12 CYCLES
+
+
+ TOTAL ENERGY    =       -421.807152949
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     3.508  TOTAL TIME:      78.268
+
+ *** ENTERING OPTIMIZATION CYCLE: 19 ***
+
+
+ RMSQ FORCE :   0.0002108  MAXIMUM :   0.0003000  CONVERGED :YES
+ MAX FORCE  :   0.0005200  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0078905  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0240381  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 19 IN ANGSTROM
+
+ R1              1.441929
+ R2              0.975076
+ R3              1.108069
+ R4              1.538143
+ R5              1.358126
+ R6              1.461461
+ R7              1.224744
+ R8              1.101525
+ R9              1.101837
+ R10             1.518437
+ R11             1.101050
+ R12             1.100476
+ R13             1.100259
+ R14             1.525632
+ R15             1.099513
+ R16             1.102570
+ R17             1.101016
+ A1            106.870753
+ A2            109.938479
+ A3            105.045908
+ A4            110.368654
+ A5            115.225344
+ A6            125.178740
+ A7            108.372156
+ A8            108.503568
+ A9            107.448098
+ A10           109.596798
+ A11           111.135023
+ A12           111.003014
+ A13           112.761886
+ A14           110.400377
+ A15           110.323845
+ A16           110.795099
+ D1            -77.040323
+ D2            167.492886
+ D3             76.381673
+ D4            183.443279
+ D5           -103.367720
+ D6             57.162077
+ D7            -59.512969
+ D8            178.764800
+ D9           -179.786681
+ D10            60.623477
+ D11           -60.197058
+ D12            46.417176
+ D13            59.465417
+ D14           -61.593988
+ D15          -180.774115
+
+ *** SCFTOL TIGHTEN TO 0.500E-08 ***
+
+ *** CDFTOL TIGHTEN TO 0.750E-05 ***
+
+
+ COORDINATES OF OPTIMIZATION STEP 19 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.441929       6    12.011  QM
+    3  H12       0.933111       0.000000      -0.282981       1     1.008  QM
+    4  H11       0.233606      -1.015118       1.819792       1     1.008  QM
+    5  C6       -1.450162       0.321682       1.841220       6    12.011  QM
+    6  O9       -2.239781      -0.770650       1.674428       8    15.999  QM
+    7  C10      -3.659750      -0.560519       1.949019       6    12.011  QM
+    8  O7       -1.845841       1.407061       2.247901       8    15.999  QM
+    9  H15      -4.021811       0.253708       1.301482       1     1.008  QM
+   10  H14      -3.768619      -0.230519       2.994625       1     1.008  QM
+   11  C13      -4.374589      -1.872858       1.679906       6    12.011  QM
+   12  H17      -5.451941      -1.752871       1.872853       1     1.008  QM
+   13  H16      -3.994710      -2.672851       2.333168       1     1.008  QM
+   14  H18      -4.243740      -2.185780       0.633232       1     1.008  QM
+   15  C1        0.969863       1.019068       2.032199       6    12.011  QM
+   16  H4        0.710180       2.033756       1.697682       1     1.008  QM
+   17  H3        2.003285       0.785744       1.726812       1     1.008  QM
+   18  H5        0.933764       1.001309       3.132480       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 19 CYCLES
+
+
+ TOTAL ENERGY    =       -421.807162705
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     5.059  TOTAL TIME:      83.328
+
+ *** ENTERING OPTIMIZATION CYCLE: 20 ***
+
+
+ RMSQ FORCE :   0.0001852  MAXIMUM :   0.0003000  CONVERGED :YES
+ MAX FORCE  :   0.0004540  MAXIMUM :   0.0004500  CONVERGED : NO
+ RMSQ DR    :   0.0031725  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0075114  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 20 IN ANGSTROM
+
+ R1              1.442694
+ R2              0.975255
+ R3              1.108053
+ R4              1.538097
+ R5              1.357985
+ R6              1.461448
+ R7              1.225235
+ R8              1.101523
+ R9              1.101826
+ R10             1.518483
+ R11             1.101043
+ R12             1.100484
+ R13             1.100256
+ R14             1.524741
+ R15             1.099500
+ R16             1.102657
+ R17             1.100943
+ A1            106.843082
+ A2            109.825852
+ A3            105.007894
+ A4            110.387117
+ A5            115.218205
+ A6            125.172176
+ A7            108.369177
+ A8            108.510228
+ A9            107.445829
+ A10           109.597029
+ A11           111.127506
+ A12           110.995607
+ A13           112.681585
+ A14           110.389311
+ A15           110.241731
+ A16           110.834834
+ D1            -76.988938
+ D2            167.623118
+ D3             76.001911
+ D4            183.353702
+ D5           -103.779887
+ D6             57.256005
+ D7            -59.433938
+ D8            178.847480
+ D9           -179.785158
+ D10            60.628587
+ D11           -60.194283
+ D12            46.555850
+ D13            59.326630
+ D14           -61.535528
+ D15          -180.856808
+
+ *** SCFTOL TIGHTEN TO 0.100E-08 ***
+
+
+ COORDINATES OF OPTIMIZATION STEP 20 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.442694       6    12.011  QM
+    3  H12       0.933418       0.000000      -0.282582       1     1.008  QM
+    4  H11       0.234680      -1.015615       1.818504       1     1.008  QM
+    5  C6       -1.451105       0.318432       1.840988       6    12.011  QM
+    6  O9       -2.240035      -0.772953       1.666086       8    15.999  QM
+    7  C10      -3.660238      -0.565198       1.941207       6    12.011  QM
+    8  O7       -1.848134       1.401413       2.254172       8    15.999  QM
+    9  H15      -4.022501       0.252250       1.297858       1     1.008  QM
+   10  H14      -3.769895      -0.241114       2.988569       1     1.008  QM
+   11  C13      -4.374138      -1.876522       1.664498       6    12.011  QM
+   12  H17      -5.451650      -1.758290       1.857590       1     1.008  QM
+   13  H16      -3.994007      -2.679771       2.313618       1     1.008  QM
+   14  H18      -4.242499      -2.183466       0.616157       1     1.008  QM
+   15  C1        0.967396       1.021415       2.030649       6    12.011  QM
+   16  H4        0.706268       2.034767       1.693263       1     1.008  QM
+   17  H3        2.000525       0.789617       1.722808       1     1.008  QM
+   18  H5        0.931858       1.006268       3.130914       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 18 CYCLES
+
+
+ TOTAL ENERGY    =       -421.807168021
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.827  TOTAL TIME:      88.154
+
+ *** ENTERING OPTIMIZATION CYCLE: 21 ***
+
+
+ RMSQ FORCE :   0.0000823  MAXIMUM :   0.0003000  CONVERGED :YES
+ MAX FORCE  :   0.0001973  MAXIMUM :   0.0004500  CONVERGED :YES
+ RMSQ DR    :   0.0028641  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0078351  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+
+ Z-MATRIX VARIABLES OF OPTIMIZATION CYCLE 21 IN ANGSTROM
+
+ R1              1.442967
+ R2              0.975370
+ R3              1.108101
+ R4              1.538290
+ R5              1.357932
+ R6              1.461409
+ R7              1.225495
+ R8              1.101519
+ R9              1.101829
+ R10             1.518499
+ R11             1.101044
+ R12             1.100486
+ R13             1.100261
+ R14             1.524315
+ R15             1.099467
+ R16             1.102711
+ R17             1.100908
+ A1            106.798807
+ A2            109.787899
+ A3            104.986128
+ A4            110.391991
+ A5            115.215066
+ A6            125.167898
+ A7            108.377016
+ A8            108.511218
+ A9            107.442189
+ A10           109.593502
+ A11           111.125358
+ A12           110.992710
+ A13           112.655458
+ A14           110.377122
+ A15           110.160029
+ A16           110.862089
+ D1            -76.918744
+ D2            167.753402
+ D3             75.662052
+ D4            183.339894
+ D5           -104.097876
+ D6             57.311617
+ D7            -59.386652
+ D8            178.901071
+ D9           -179.789198
+ D10            60.625874
+ D11           -60.197351
+ D12            46.664512
+ D13            59.226527
+ D14           -61.579153
+ D15          -180.924558
+
+
+ COORDINATES OF OPTIMIZATION STEP 21 IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.442967       6    12.011  QM
+    3  H12       0.933747       0.000000      -0.281894       1     1.008  QM
+    4  H11       0.235990      -1.015613       1.818102       1     1.008  QM
+    5  C6       -1.452155       0.315204       1.840746       6    12.011  QM
+    6  O9       -2.240056      -0.775677       1.658614       8    15.999  QM
+    7  C10      -3.660726      -0.570383       1.932959       6    12.011  QM
+    8  O7       -1.850720       1.395971       2.258988       8    15.999  QM
+    9  H15      -4.023013       0.249758       1.293068       1     1.008  QM
+   10  H14      -3.771961      -0.251447       2.981736       1     1.008  QM
+   11  C13      -4.373137      -1.881018       1.649154       6    12.011  QM
+   12  H17      -5.450973      -1.764597       1.841546       1     1.008  QM
+   13  H16      -3.993049      -2.686984       2.294925       1     1.008  QM
+   14  H18      -4.239941      -2.182810       0.599509       1     1.008  QM
+   15  C1        0.965371       1.023157       2.030116       6    12.011  QM
+   16  H4        0.703124       2.035584       1.690935       1     1.008  QM
+   17  H3        1.998463       0.791508       1.721845       1     1.008  QM
+   18  H5        0.929689       1.009527       3.130361       1     1.008  QM
+
+
+
+ NEW SCF-ENERGY CALCULATED IN 15 CYCLES
+
+
+ TOTAL ENERGY    =       -421.807170066
+                                                                                
+
+ OPTIMIZATION CYCLE               STEP TIME:     4.171  TOTAL TIME:      92.325
+
+ *** ENTERING OPTIMIZATION CYCLE: 22 ***
+
+
+ *** CONVERGED BY GRADIENT AND ENERGY CRITERIA ***
+ *** AFTER 21 OPTIMIZATION CYCLES ***
+
+
+ RMSQ FORCE :   0.0000553  MAXIMUM :   0.0003000  CONVERGED :YES
+ MAX FORCE  :   0.0001382  MAXIMUM :   0.0004500  CONVERGED :YES
+ RMSQ DR    :   0.0021645  MAXIMUM :   0.0012000  CONVERGED : NO
+ MAX DR     :   0.0060563  MAXIMUM :   0.0018000  CONVERGED : NO
+
+
+ *** THE GEOMETRY IS OPTIMIZED ***
+
+
+ *** OPTIMIZED Z-MATRIX VARIABLES IN ANGSTROM ***
+
+ R1              1.442967
+ R2              0.975370
+ R3              1.108101
+ R4              1.538290
+ R5              1.357932
+ R6              1.461409
+ R7              1.225495
+ R8              1.101519
+ R9              1.101829
+ R10             1.518499
+ R11             1.101044
+ R12             1.100486
+ R13             1.100261
+ R14             1.524315
+ R15             1.099467
+ R16             1.102711
+ R17             1.100908
+ A1            106.798807
+ A2            109.787899
+ A3            104.986128
+ A4            110.391991
+ A5            115.215066
+ A6            125.167898
+ A7            108.377016
+ A8            108.511218
+ A9            107.442189
+ A10           109.593502
+ A11           111.125358
+ A12           110.992710
+ A13           112.655458
+ A14           110.377122
+ A15           110.160029
+ A16           110.862089
+ D1            -76.918744
+ D2            167.753402
+ D3             75.662052
+ D4            183.339894
+ D5           -104.097876
+ D6             57.311617
+ D7            -59.386652
+ D8            178.901071
+ D9           -179.789198
+ D10            60.625874
+ D11           -60.197351
+ D12            46.664512
+ D13            59.226527
+ D14           -61.579153
+ D15          -180.924558
+
+
+ FINAL INPUT ORIENTATION IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        0.000000       0.000000       0.000000       8    15.999  QM
+    2  C2        0.000000       0.000000       1.442967       6    12.011  QM
+    3  H12       0.933747       0.000000      -0.281894       1     1.008  QM
+    4  H11       0.235990      -1.015613       1.818102       1     1.008  QM
+    5  C6       -1.452155       0.315204       1.840746       6    12.011  QM
+    6  O9       -2.240056      -0.775677       1.658614       8    15.999  QM
+    7  C10      -3.660726      -0.570383       1.932959       6    12.011  QM
+    8  O7       -1.850720       1.395971       2.258988       8    15.999  QM
+    9  H15      -4.023013       0.249758       1.293068       1     1.008  QM
+   10  H14      -3.771961      -0.251447       2.981736       1     1.008  QM
+   11  C13      -4.373137      -1.881018       1.649154       6    12.011  QM
+   12  H17      -5.450973      -1.764597       1.841546       1     1.008  QM
+   13  H16      -3.993049      -2.686984       2.294925       1     1.008  QM
+   14  H18      -4.239941      -2.182810       0.599509       1     1.008  QM
+   15  C1        0.965371       1.023157       2.030116       6    12.011  QM
+   16  H4        0.703124       2.035584       1.690935       1     1.008  QM
+   17  H3        1.998463       0.791508       1.721845       1     1.008  QM
+   18  H5        0.929689       1.009527       3.130361       1     1.008  QM
+
+
+
+ *** THE GENERATED Z-MATRIX ORIENTATION IS USED ***
+
+ POINT GROUP: C1
+
+ GROUP ORDER: 1
+
+
+ STANDARD ORIENTATION IN ANGSTROM
+
+  NO.  ATOM        X              Y              Z        Z-ATOM   MASS   TYPE
+
+    1  O8        1.597006      -1.406600      -0.644968       8    15.999  QM
+    2  C2        1.465175      -0.408512       0.388760       6    12.011  QM
+    3  H12       2.476143      -1.813954      -0.533034       1     1.008  QM
+    4  H11       1.244960      -0.898853       1.357759       1     1.008  QM
+    5  C6        0.226308       0.412960      -0.007127       6    12.011  QM
+    6  O9       -0.908528      -0.281558       0.264484       8    15.999  QM
+    7  C10      -2.150807       0.372038      -0.142051       6    12.011  QM
+    8  O7        0.251222       1.533710      -0.502241       8    15.999  QM
+    9  H15      -2.099128       0.573990      -1.223664       1     1.008  QM
+   10  H14      -2.222163       1.341380       0.376901       1     1.008  QM
+   11  C13      -3.294263      -0.560605       0.216453       6    12.011  QM
+   12  H17      -4.250871      -0.102587      -0.079212       1     1.008  QM
+   13  H16      -3.324604      -0.752822       1.299597       1     1.008  QM
+   14  H18      -3.195976      -1.523792      -0.306218       1     1.008  QM
+   15  C1        2.698423       0.479368       0.508361       6    12.011  QM
+   16  H4        2.890097       0.998368      -0.441759       1     1.008  QM
+   17  H3        3.579159      -0.127608       0.776419       1     1.008  QM
+   18  H5        2.559902       1.239171       1.292905       1     1.008  QM
+
+
+
+ ELECTRONIC CORE ENERGY      =      -1355.748870076
+ ELECTRONIC COULOMB ENERGY   =        596.138078193
+ ELECTRONIC HARTREE ENERGY   =       -759.610791882
+
+ EXCHANGE ENERGY             =        -53.762853434
+ CORRELATION ENERGY          =         -2.122399922
+ EXCHANGE-CORRELATION ENERGY =        -55.885253355
+
+ ELECTRONIC SCF ENERGY       =       -815.496045238
+ NUCLEAR-REPULSION ENERGY    =        393.688875169
+ TOTAL ENERGY                =       -421.807170068
+                                                                                
+
+ OPTIMIZATION CYCLE               CUM. TIME:    88.833  TOTAL TIME:      93.695
+
+ TIMING STATISTICS (SECONDS)
+
+
+ TIMER ENTRY                    NUMBER OF CALLS   CUMUL. CPU TIME   CONTRIBUT.
+
+ INITIALIZATION                              1             0.045         0.0 %
+ INPUT                                       1             0.090         0.1 %
+ MATRIX MULTIPLICATION                     117             0.005         0.0 %
+ DIAGONALIZATION                            65             0.006         0.0 %
+ SYMMETRY ANALYSIS                          24             0.002         0.0 %
+ START GUESS                                 1             0.647         0.7 %
+ MPI MATRIX MULTIPLICATION                 950             0.699         0.7 %
+                         ON NODE             1             0.698
+                         ON NODE             2             0.700
+                         ON NODE             3             0.699
+                         ON NODE             4             0.700
+                         ON NODE             5             0.699
+                         ON NODE             6             0.700
+                         ON NODE             7             0.698
+                         ON NODE             8             0.699
+                         ON NODE             9             0.699
+           AVERAGE PER PROCESSOR                           0.699
+ MPI DIAGONALIZATION                       390             2.988         3.2 %
+                         ON NODE             1             2.989
+                         ON NODE             2             2.990
+                         ON NODE             3             2.990
+                         ON NODE             4             2.990
+                         ON NODE             5             2.989
+                         ON NODE             6             2.990
+                         ON NODE             7             2.989
+                         ON NODE             8             2.990
+                         ON NODE             9             2.989
+           AVERAGE PER PROCESSOR                           2.989
+ CORE INTEGRALS                             23             1.139         1.2 %
+ ORTHOGONALIZATION MATRIX                   23             0.278         0.3 %
+ MPI AUXILIARY FUNCTION FIT                581            27.589        29.4 %
+                         ON NODE             1            27.699
+                         ON NODE             2            27.668
+                         ON NODE             3            27.697
+                         ON NODE             4            27.666
+                         ON NODE             5            27.674
+                         ON NODE             6            27.667
+                         ON NODE             7            27.678
+                         ON NODE             8            27.684
+                         ON NODE             9            27.666
+           AVERAGE PER PROCESSOR                          27.669
+ MPI CORE HAMILTONIAN                       23             0.265         0.3 %
+                         ON NODE             1             0.224
+                         ON NODE             2             0.224
+                         ON NODE             3             0.224
+                         ON NODE             4             0.224
+                         ON NODE             5             0.224
+                         ON NODE             6             0.224
+                         ON NODE             7             0.224
+                         ON NODE             8             0.224
+                         ON NODE             9             0.224
+           AVERAGE PER PROCESSOR                           0.228
+ SCF ITERATION                              23            71.714        76.5 %
+ NULLSPACE                                   1             0.015         0.0 %
+ MPI NEAR J CALCULATION                    279            10.216        10.9 %
+                         ON NODE             1            10.222
+                         ON NODE             2            10.224
+                         ON NODE             3            10.224
+                         ON NODE             4            10.223
+                         ON NODE             5            10.223
+                         ON NODE             6            10.222
+                         ON NODE             7            10.223
+                         ON NODE             8            10.223
+                         ON NODE             9            10.223
+           AVERAGE PER PROCESSOR                          10.222
+ MPI FAR J CALCULATION                     279             0.235         0.3 %
+                         ON NODE             1             0.235
+                         ON NODE             2             0.236
+                         ON NODE             3             0.236
+                         ON NODE             4             0.236
+                         ON NODE             5             0.236
+                         ON NODE             6             0.236
+                         ON NODE             7             0.236
+                         ON NODE             8             0.236
+                         ON NODE             9             0.236
+           AVERAGE PER PROCESSOR                           0.236
+ GRID INITIALIZATION                         2             0.002         0.0 %
+ ADAPTIVE GRID GENERATION                    2             0.408         0.4 %
+ MPI XC POTENTIAL                          279            27.190        29.0 %
+                         ON NODE             1            27.225
+                         ON NODE             2            27.248
+                         ON NODE             3            27.242
+                         ON NODE             4            27.235
+                         ON NODE             5            27.234
+                         ON NODE             6            27.240
+                         ON NODE             7            27.230
+                         ON NODE             8            27.237
+                         ON NODE             9            27.232
+           AVERAGE PER PROCESSOR                          27.231
+ MPI NEAR ERI CALCULATION                  279             8.919         9.5 %
+                         ON NODE             1             8.925
+                         ON NODE             2             8.927
+                         ON NODE             3             8.926
+                         ON NODE             4             8.926
+                         ON NODE             5             8.926
+                         ON NODE             6             8.925
+                         ON NODE             7             8.926
+                         ON NODE             8             8.926
+                         ON NODE             9             8.926
+           AVERAGE PER PROCESSOR                           8.925
+ MPI FAR ERI CALCULATION                   279             0.215         0.2 %
+                         ON NODE             1             0.215
+                         ON NODE             2             0.216
+                         ON NODE             3             0.216
+                         ON NODE             4             0.216
+                         ON NODE             5             0.216
+                         ON NODE             6             0.216
+                         ON NODE             7             0.216
+                         ON NODE             8             0.216
+                         ON NODE             9             0.215
+           AVERAGE PER PROCESSOR                           0.216
+ OPTIMIZATION CYCLE                         22            88.833        94.8 %
+ PRIMITIVES                                 40             0.005         0.0 %
+ ENERGY GRADIENTS                           22             9.650        10.3 %
+ MPI XC ENERGY GRADIENTS                    22             6.450         6.9 %
+                         ON NODE             1             6.459
+                         ON NODE             2             6.461
+                         ON NODE             3             6.460
+                         ON NODE             4             6.459
+                         ON NODE             5             6.460
+                         ON NODE             6             6.460
+                         ON NODE             7             6.459
+                         ON NODE             8             6.459
+                         ON NODE             9             6.458
+           AVERAGE PER PROCESSOR                           6.459
+ MPI NEAR ERI GRADIENTS                     22             2.268         2.4 %
+                         ON NODE             1             2.269
+                         ON NODE             2             2.270
+                         ON NODE             3             2.270
+                         ON NODE             4             2.269
+                         ON NODE             5             2.270
+                         ON NODE             6             2.270
+                         ON NODE             7             2.270
+                         ON NODE             8             2.269
+                         ON NODE             9             2.269
+           AVERAGE PER PROCESSOR                           2.269
+ MPI FAR ERI GRADIENTS                      22             0.026         0.0 %
+                         ON NODE             1             0.026
+                         ON NODE             2             0.026
+                         ON NODE             3             0.026
+                         ON NODE             4             0.026
+                         ON NODE             5             0.026
+                         ON NODE             6             0.026
+                         ON NODE             7             0.026
+                         ON NODE             8             0.026
+                         ON NODE             9             0.026
+           AVERAGE PER PROCESSOR                           0.026
+ MPI CORE HAMILTONIAN GRADIENTS             22             0.275         0.3 %
+                         ON NODE             1             0.275
+                         ON NODE             2             0.275
+                         ON NODE             3             0.275
+                         ON NODE             4             0.275
+                         ON NODE             5             0.275
+                         ON NODE             6             0.275
+                         ON NODE             7             0.275
+                         ON NODE             8             0.275
+                         ON NODE             9             0.275
+           AVERAGE PER PROCESSOR                           0.275
+
+ FINAL TIMING           DATE: SAT FEB 07 03:25:23 2026  TOTAL TIME:      93.696
+
+ Execution of interactive request ended on johnny-ASUS-TUF at Sat Feb  7 03:23:48 CST 2026
